@@ -23,7 +23,7 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	{
 		return (NULL);
 	}
-	
+
 	/** initialize the new node*/
 	new_node->n = value;
 	new_node->parent = parent;
