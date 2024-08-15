@@ -45,12 +45,12 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	if (tree == NULL)
 	return (0);
-	
+
 	height = binary_tree_height(tree);
 	size = binary_tree_size(tree);
 
 	/** the expected size of a perfect binary tree of height h is 2^h - 1 */
 	expected_size = (1 << height) - 1;
-	
+
 	return (size == expected_size);
 }
