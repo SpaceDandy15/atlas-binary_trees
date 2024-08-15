@@ -17,6 +17,9 @@ size_t binary_tree_nodes(const binary_tree_t *tree)
 	if (tree->left != NULL || tree->right != NULL)
 	{
 		/** count this node and recursively count in left and right subtrees*/
-		return (binary_tree_nodes(tree->left + binary_tree_nodes(tree->right) + 1);)
+		return (binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right) + 1);
 	}
+	/** if the current node has no children, don't count it*/
+	return (binary_tree_nodes(tree->left) + binary_tree_nodes(tree->right));
 }
+
