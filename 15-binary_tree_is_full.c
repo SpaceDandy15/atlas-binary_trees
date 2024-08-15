@@ -7,7 +7,7 @@
  * Return: 1 if the tree is full, 0 otherwise. If tree is NULL, return 0.
 */
 int binary_tree_is_full(const binary_tree_t *tree)
-{calloc
+{
 	/** if tree is NULL, it is not full*/
 	if (tree == NULL)
 	return (0);
